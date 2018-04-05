@@ -16,7 +16,7 @@ module bed(width = 1000, length = 2000, height=2000, mattress_thickness=100) {
 		translate([-width/2, 0, height-side_height]) zcube([side_thickness, length, 50], x=1, bom="slat rails");
 		translate([width/2, 0, height-side_height]) zcube([side_thickness, length, 50], x=-1, bom="slat rails");
 	
-		for (i = [-length/2:200:length/2]) {
+		for (i = [-length/2+50:100:length/2-50]) {
 			translate([0, i, height-side_height+50]) zcube([width, 50, 25], bom="slat");
 		}
 	}

@@ -12,5 +12,5 @@ difference() {
 		translate([25, 0, 0]) zcube([10,50,8], x=1);
 	}
 	
-	hole(6);
+	hole(8.5);
 }
